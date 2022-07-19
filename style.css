@@ -1,0 +1,270 @@
+/* Google font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+/*========================
+       Common CSS
+============================ */
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*========================
+       Header CSS
+============================ */
+header{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 25px;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar li{
+    list-style: none;
+    margin: 5px 15px;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+}
+
+
+/*========================
+       Banner section CSS
+============================ */
+#banner-section{
+    display: flex;
+}
+
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner-text h1{
+    font-size: 52px;
+    color: #3A3A3A;
+}
+
+.banner-text p{
+    font-size: 16px;
+    color: #3A3A3A;
+    margin: 20px 0;
+}
+
+.button{
+    width: 30%;
+    background: #E02C6D;border-radius: 40px;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.banner-img{
+    width: 100%;
+    margin-left: 150px;
+}
+
+.banner-img img{
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 1px rgb(232, 229, 229);
+}
+
+
+/*========================
+    Brands section CSS
+============================ */
+
+#brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(232, 229, 229) ;
+    border-bottom: 1px solid rgb(232, 229, 229) ;
+    margin: 50px 0;
+}
+
+.brand{
+    padding: 20px 30px;
+}
+
+
+/*========================
+    Collection section CSS
+============================ */
+
+#collection-section{
+    margin: 100px 0;
+}
+
+.section-title{
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+
+
+.item{
+    padding: 17px;
+    box-shadow: 1px 1px 8px 1px rgb(232, 229, 229);
+}
+
+.item-details .item-title{
+    color: #18191F;
+    padding: 5px 0;
+}
+
+.item-details .item-price{
+    color: #000;
+    font-weight: normal;
+}
+
+.item-details .ratings{
+    padding: 3px 0;
+    color: orange;
+}
+
+.item-details .ratings span{
+    color: #5E6366;
+    margin-left: 15px;
+}
+.item-details p{
+    color: #787885;
+    font-size: 14px;
+}
+
+#collection-section .see-more{
+    display: flex;
+    justify-content: flex-end;
+    color: #E02C6D;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+
+/*========================
+    Featured section CSS
+============================ */
+
+#featured-section{
+    display: flex;
+}
+
+#featured-section .featured-img{
+    width: 100%;
+}
+
+#featured-section .featured-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#featured-section .featured-info h2{
+    margin: 10px 0;
+    font-size: 38px;
+    font-weight: 700;
+}
+#featured-section .featured-info p{
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+
+
+
+
+/*========================
+    Responsive CSS
+============================ */
+
+/* For mobile device */
+@media only screen and ( max-width:688px ){
+    .logo{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .nav-bar{
+        display: none;
+    }
+
+    #banner-section{
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .banner-text{
+        text-align: center;
+    }
+
+
+    .banner-text h1{
+        font-size: 35px;
+    }
+
+    .button{
+       width: 50%;
+       margin: 0 auto; 
+    }
+
+    #brands{
+        flex-wrap: wrap;
+    }
+
+    .brand{
+        padding: 5px;
+    }
+
+    #featured-section{
+        flex-direction: column;
+    }
+
+
+    .featured-img img{
+        width: 100%;
+    }
+
+}
+
+
+
+/* For Tablet Device */
+@media only screen and (min-width:689px) and (max-width:992px){
+
+}
