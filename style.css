@@ -10,8 +10,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    width: 85vw;
-    margin: 0 auto;
+   
 }
 
 *{
@@ -20,6 +19,10 @@ body{
     box-sizing: border-box;
 }
 
+header, main{
+    width: 85vw;
+    margin: 0 auto;
+}
 
 
 
@@ -34,6 +37,7 @@ header{
 }
 .logo{
     font-size: 25px;
+    margin-left: 100px;
 }
 
 .nav-bar{
@@ -204,6 +208,43 @@ header{
 }
 
 
+/*========================
+    Footer CSS
+============================ */
+
+footer{
+    background-color: #0A0826;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+
+.footer-inner{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-inner h2{
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+.footer-inner .social-icon{
+    margin: 15px 0;
+}
+
+.footer-inner .social-icon a{
+    color: #ffffff;
+}
+
+.footer-inner p i{
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
 
 
 
@@ -260,11 +301,18 @@ header{
         width: 100%;
     }
 
+
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 
 
 /* For Tablet Device */
 @media only screen and (min-width:689px) and (max-width:992px){
-
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
